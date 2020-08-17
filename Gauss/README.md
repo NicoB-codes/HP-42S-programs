@@ -4,7 +4,7 @@ Normal distribution for HP-42S.
 
 ## Usage
 
-### 1. Enter parameters of the normal distubution
+### 1. Enter parameters of the normal distribution
 * Type the value of the mean of the distribution and press `[µ]`:
 
 <img src="./screenshots/screen2.png" width="200">
