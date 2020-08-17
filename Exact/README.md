@@ -4,7 +4,7 @@
 
 <img src="./screenshots/screen2.png" width="200">
 
-Calculations performed in this new stack are always “exact” since it only manupulates whole numbers internally.
+Calculations performed in this new stack are always “exact” since it only manipulates whole numbers internally.
 
 Only a limited set of functions are accessible in this mode:
 
@@ -21,11 +21,13 @@ The dot key `[.]` is used to quickly enter fractions. Eg. press `[5][1][.][3][7]
 
 <img src="./screenshots/screen1.png" width="200">
 
-When you start the program, `EXACT` tries to convert existing values in the stack to fractions. Inaccuracies may occur in the conversion (for eg. irrational numbers are always approximated).
+When the program is started, `EXACT` tries to convert existing values in the stack to fractions. Inaccuracies may occur in the conversion (for eg. irrational numbers are always approximated).
 
 ## How to exit “exact” mode
 
-To close the program cleanly, press `[shift] + [Modes]`. On closing, stack values (`x`, `y`, `z` and `t`) are converted to floating point numbers.
+To close the program cleanly, press `[shift] + [Modes]`.
+
+On closing, stack values (`x`, `y`, `z` and `t`) are converted to floating point numbers.
 
 ## Customizing the display
 
