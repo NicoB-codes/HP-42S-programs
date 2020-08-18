@@ -20,7 +20,7 @@ Normal distribution for HP-42S.
 
 ## TVM
 
-Time Value of Money for HP-42S.
+Time value of money for HP-42S.
 
 <img src="./TVM/screenshots/screen1.png" width="200">
 
@@ -28,4 +28,4 @@ Time Value of Money for HP-42S.
 
 ## Credits
 
-In some programs, I’m using subroutines from other authors. I mention them in the READMEs when I have the information. If you find any errors or missing credits, I'll be happy to update.
+When I use program or subroutines from other authors, I mention them in the READMEs. If you find any errors or missing credits, I'll be happy to update.

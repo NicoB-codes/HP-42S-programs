@@ -1,6 +1,6 @@
 # TVM
 
-Time Value of Money for HP-42S.
+Time value of money for HP-42S.
 
 Compound interest calculations with advanced features:
 
@@ -37,12 +37,21 @@ Before the very first use, you must initialize the registers by launching the pr
 
 Starts the program by launching `TVM`.
 
+<img src="./screenshots/screen1.png" width="200">
+
+
 ### Storing numbers in the financial registers
-To store a value in a financial register, enter the number on the screen, then press the corresponding key: `[N]`, `[I% Y]`, `[PV]`, `[PMT]`, or `[FV]`.
+To store a value in a financial register, enter the number on the screen, then press the corresponding key:
+
+* `[N]`: number of periods
+* `[I%Y]`: annual interest rate
+* `[PV]`: present value
+* `[PMT]`: periodic payment amount
+* `[FV]`: final value
 
 ### Recalling numbers in the financial registers
 To display a value stored in a financial register, press `[RCL]` and then the corresponding key.
 
 ### Clearing the financial registers
-Each financial function uses numbers stored in multiple financial registers. Before starting a new financial calculation, it is recommended to clear all financial records by pressing `[↓]` then `[CLEAR]`.
+Before starting a new financial calculation, it is recommended to clear all financial registers by pressing `[↓]` then `[CLEAR]`.
 

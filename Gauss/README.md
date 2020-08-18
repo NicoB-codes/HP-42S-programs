@@ -21,7 +21,9 @@ Normal distribution for HP-42S.
 
 * For the cumulative probability function, type the value of the variable and press `[CPF]`.
 
-* For the inverse of cumulative probability function, type the value of the probability and press `[ICPF]`:
+* For the inverse of cumulative probability function, type the value of the probability and press `[ICPF]`.
+
+Example:
 
 `0.95` `[ICPF]`:
 
