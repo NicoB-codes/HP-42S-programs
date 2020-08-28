@@ -75,7 +75,7 @@ Before starting a new financial calculation, it is recommended to clear all fina
 
 ## Example
 
-### Prêt immobilier
+### Mortgage loan
 
 How much can you borrow to buy a house on a 20-year 2.5% interest loan (monthly compounding), if you can make payments of $1000 at the end of each month?
 
@@ -99,7 +99,7 @@ You are asked how many periods you want to amortize:
 
 <img src="./screenshots/screen17.png" width="200">
 
-Solution: after 240 months, you will have paid $51,286.18 in interest
+Solution: after 240 months, you will have paid $51,286.18 in interest.
 
 From this screen, if you want to calculate the monthly amortization table, press:
 
