@@ -41,4 +41,4 @@ Sub-routines (included in `gauss.raw`):
 * `GPF`
 * `IGPF`
 
-> `ERF` and `IERF` copyright © 2006-2007 by Jean-Marc Baillard.
+> Note: `ERF` and `IERF` copyright © 2006-2007 by Jean-Marc Baillard [http://hp41programs.yolasite.com/error.php].

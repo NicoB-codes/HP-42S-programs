@@ -4,8 +4,8 @@ Time value of money for HP-42S.
 
 Compound interest calculations with advanced features:
 
-* Possibility of having different values for “installment periods per year” `P/Y` and “compounding periods per year” `C/Y`
-* Calculation of the amortization table with adjustable periods
+* Adjustable values for “installment periods per year” `P/Y` and also “compounding periods per year” `C/Y`
+* Amortization table with adjustable period of calculation
 * Ability to solve the 2 solutions for `I%Y` (in the rare cases where this happens)
 
 ## Warning
@@ -31,14 +31,30 @@ When the program is closed, `TVM` restores these settings:
 
 Before the very first use, you must initialize the registers by launching the program `CLFIN` (see warning above).
 
-## Usage
+## Basic usage
 
 ### Launching the program
 
-Starts the program by launching `TVM`.
+Starts the program by launching `TVM`. You should see this screen:
 
 <img src="./screenshots/screen1.png" width="200">
 
+### Setting parameters
+
+The configuration menu can be accessed by pressing `[↓]`:
+
+<img src="./screenshots/screen2.png" width="200">
+
+Here you can set:
+
+* `[P/Y]`: number of installment periods per year (default 12)
+* `[C/Y]`: number of compounding periods per year (default 12)
+* `[BEG]`: switch between payment at end or beginning of period (default END)
+* `[C]`: switch between ”simple interest” and compound interest” for the odd period when `N` is not an integer
+
+The last menu item resets the financial registers:
+
+* `[CLEAR]`: clears the financial registers and resets `P/Y` and `C/Y` to 12 periods per year
 
 ### Storing numbers in the financial registers
 To store a value in a financial register, enter the number on the screen, then press the corresponding key:
@@ -49,9 +65,61 @@ To store a value in a financial register, enter the number on the screen, then p
 * `[PMT]`: periodic payment amount
 * `[FV]`: final value
 
+Once 4 values ​​have been set, you can calculate the last one by pressing it directly.
+
 ### Recalling numbers in the financial registers
 To display a value stored in a financial register, press `[RCL]` and then the corresponding key.
 
 ### Clearing the financial registers
 Before starting a new financial calculation, it is recommended to clear all financial registers by pressing `[↓]` then `[CLEAR]`.
 
+## Example
+
+### Prêt immobilier
+
+How much can you borrow to buy a house on a 20-year 2.5% interest loan (monthly compounding), if you can make payments of $1000 at the end of each month?
+
+Press:
+
+[`v`] [`CLEAR`] [`^`] `20` [`ENTER`] `12` [`×`] [`N`] `2.5` [`I%Y`] `1000` [`+/–`] [`PMT`] [`PV`]
+
+Solution: you can borrow $188,713.82
+
+How much interest are you going to pay?
+
+Press:
+
+`0` [`N`] [`AMOR`]
+
+You are asked how many periods you want to amortize:
+
+<img src="./screenshots/screen8.png" width="200">
+
+`240` [`R/S`]
+
+<img src="./screenshots/screen17.png" width="200">
+
+Solution: after 240 months, you will have paid $51,286.18 in interest
+
+From this screen, if you want to calculate the monthly amortization table, press:
+
+[`EXIT`] [`PV`]    *(you need to recalculate the present value)*
+
+`0` [`N`] [`AMOR`] `1` [`R/S`]
+
+<img src="./screenshots/screen18.png" width="200">
+
+Continue to display the rest of the table by pressing [`R/S`]
+
+<img src="./screenshots/screen19.png" width="200">
+
+...etc...
+
+You can find a lot more examples in the user manual of the HP-12C.
+
+## Requirements
+
+Sub-routines (included in `tvm.raw`):
+* `SOLVi`: solver for `I%Y`
+* `CLFIN`: resets the financial registers
+* `RND2`: rounds the value in `Y` to the step in `X`

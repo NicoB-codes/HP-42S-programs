@@ -47,4 +47,5 @@ Although the program can run on a real HP-42S, it’s rather slow. `EXACT` is in
 
 ## Requirements
 
-The program `→Q` in needed (included in `exact.raw`).
+Sub-routines (included in `exact.raw`):
+* `→Q`

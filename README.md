@@ -1,6 +1,6 @@
 # HP-42S-programs
 
-Collection of programs I've made for the HP-42S.
+Collection of programs for the HP-42S.
 
 ## EXACT
 
@@ -25,7 +25,3 @@ Time value of money for HP-42S.
 <img src="./TVM/screenshots/screen1.png" width="200">
 
 [more](https://github.com/Musiame/HP-42S-programs/tree/master/TVM)
-
-## Credits
-
-When I use program or subroutines from other authors, I mention them in the READMEs. If you find any errors or missing credits, I'll be happy to update.
