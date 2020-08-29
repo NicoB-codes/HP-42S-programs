@@ -6,7 +6,7 @@ Compound interest calculations with advanced features:
 
 * Adjustable values for “installment periods per year” `P/Y` and also “compounding periods per year” `C/Y`
 * Amortization table with adjustable period of calculation
-* Ability to solve the 2 solutions for `I%Y` (in the rare cases where this happens)
+* Ability to solve the 2 solutions for `I%Y` (in the [rare cases](#Solve-for-2-solutions) where this happens)
 
 ## Warning
 
@@ -83,7 +83,7 @@ Press:
 
 [`v`] [`CLEAR`] [`^`] `20` [`ENTER`] `12` [`×`] [`N`] `2.5` [`I%Y`] `1000` [`+/–`] [`PMT`] [`PV`]
 
-Solution: you can borrow $188,713.82
+*Solution: you can borrow $188,713.82*
 
 How much interest are you going to pay?
 
@@ -99,7 +99,7 @@ You are asked how many periods you want to amortize:
 
 <img src="./screenshots/screen17.png" width="200">
 
-Solution: after 240 months, you will have paid $51,286.18 in interest.
+*Solution: after 240 months, you will have paid $51,286.18 in interest.*
 
 From this screen, if you want to calculate the monthly amortization table, press:
 
@@ -113,9 +113,29 @@ Continue to display the rest of the table by pressing [`R/S`]
 
 <img src="./screenshots/screen19.png" width="200">
 
-...etc...
+*...etc...*
 
-You can find a lot more examples in the user manual of the HP-12C.
+A lot more examples can be found in the user manual of the HP-12C ([here](https://support.hp.com/us-en/product/hp-12c-financial-programmable-calculator/33525/manuals)).
+
+### Solve for 2 solutions
+
+By default, `TVM` will search for only one solution for `I%Y`. Most of the time, this is what you want because there is usually only one solution.
+
+Set the flag 82 if you want to activate the search for 2 solutions:
+
+[`Shift`] [`FLAGS`] [`SF`] `82` [`ENTER`]
+
+Example with 2 solutions for `I%Y`:
+
+[`v`] [`CLEAR`] [`^`] `120` [`N`] `500` [`PV`] `10` [`+/–`] [`PMT`] `720` [`FV`] [`I%Y`]
+
+*1st solution : 7.96%*
+
+Press [`I%Y`] again:
+
+*2nd solution : 2.52%*
+
+*Warning*: activating flag 82 will slow down computation even if there is only one solution.
 
 ## Requirements
 
