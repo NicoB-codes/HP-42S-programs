@@ -115,7 +115,7 @@ Continue to display the rest of the table by pressing [`R/S`]
 
 *...etc...*
 
-A lot more examples can be found in the user manual of the HP-12C ([here](https://support.hp.com/us-en/product/hp-12c-financial-programmable-calculator/33525/manuals)).
+A lot more examples can be found in the user manual of the HP-12C ([here](https://hpofficesupply.com/product/hp-12c-financial-programmable-calculator/)).
 
 ### Solve for 2 solutions
 
